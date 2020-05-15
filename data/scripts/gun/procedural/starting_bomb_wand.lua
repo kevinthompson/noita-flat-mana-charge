@@ -43,7 +43,7 @@ gun.shuffle_deck_when_empty = 1
 gun.fire_rate_wait = {3,8}
 gun.spread_degrees = 0
 gun.speed_multiplier = 1
-gun.mana_charge_speed = {5,20}
+gun.mana_charge_speed = 50
 gun.mana_max = {80,110}
 gun.actions = {"BOMB","DYNAMITE","CLOUD_WATER","ROCKET","GRENADE"}
 
@@ -54,7 +54,7 @@ ComponentSetValue( ability_comp, "ui_name", get_random_from( gun.name ) )
 
 ComponentObjectSetValue( ability_comp, "gun_config", "reload_time", get_random_between_range( gun.reload_time ) )
 ComponentObjectSetValue( ability_comp, "gunaction_config", "fire_rate_wait", get_random_between_range( gun.fire_rate_wait ) )
-ComponentSetValue( ability_comp, "mana_charge_speed", get_random_between_range( gun.mana_charge_speed) )
+ComponentSetValue( ability_comp, "mana_charge_speed", gun.mana_charge_speed )
 
 ComponentObjectSetValue( ability_comp, "gun_config", "actions_per_round", gun.actions_per_round )
 ComponentObjectSetValue( ability_comp, "gun_config", "deck_capacity", deck_capacity )

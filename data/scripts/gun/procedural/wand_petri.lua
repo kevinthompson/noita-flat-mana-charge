@@ -661,7 +661,7 @@ function generate_gun( cost, level, force_unshuffle )
 		gun["speed_multiplier"] = 0
 		gun["prob_unshuffle"] = 0.1
 		gun["prob_draw_many"] = 0.15
-		gun["mana_charge_speed"] = 50*level + Random(-5,5*level)
+		gun["mana_charge_speed"] = 50*level
 		gun["mana_max"] = 50 + (150 * level) + (Random(-5,5)*10)
 		gun["force_unshuffle"] = 0
 
